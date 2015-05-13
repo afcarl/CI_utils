@@ -43,6 +43,7 @@ class TestTools:
             raise RuntimeError('Unexpected result status:' + status)
 
     def delete_job(self, job_id):
+        # TODO does not work yet
         url = self.base_url + 'job' + '/' + job_id
         res = requests.delete(url)
         return res
